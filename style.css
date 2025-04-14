@@ -1,35 +1,28 @@
-/* General Reset */
-body {
-  margin: 0;
-  padding: 0;
+.site-header {
+  background-color: #000;
+  color: #fff;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #000;
 }
 
-/* Header */
-header {
+.top-banner {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.logo-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #000;
-  color: #fff;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
 }
 
 .logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.logo h1 {
-  font-size: 1.2rem;
-  letter-spacing: 1px;
+  height: 50px;
 }
 
 nav ul {
@@ -48,168 +41,4 @@ nav ul li button {
   cursor: pointer;
 }
 
-/* Hero Section */
-.hero {
-  background-color: #111;
-  color: #fff;
-  padding: 60px 30px;
-  text-align: center;
-}
-
-.hero img {
-  height: 120px;
-  margin-bottom: 20px;
-}
-
-.hero h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.hero .btn {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Section Titles */
-.section-title {
-  font-size: 1.8rem;
-  margin: 40px 0 20px;
-  text-align: center;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 60px;
-  background: #000;
-  margin: 10px auto 0;
-}
-
-/* Featured Products */
-.featured-products {
-  padding: 40px 20px;
-}
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.product-card {
-  background: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
-  box-sizing: border-box;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-.price {
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.product-card button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.95rem;
-}
-
-.product-card button:hover {
-  background-color: #333;
-}
-
-/* Other Sections */
-.about,
-.contact,
-.shop {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.about p,
-.contact p {
-  max-width: 600px;
-  margin: auto;
-}
-
-/* Footer */
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
-
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Responsive Grid */
-@media (max-width: 768px) {
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .hero h2 {
-    font-size: 1.4rem;
-  }
-
-  .hero img {
-    height: 80px;
-  }
-}
 

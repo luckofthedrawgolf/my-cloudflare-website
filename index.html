@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luck of the Draw Golf</title>
-  <style>
-    body {
-      background-color: #87CEEB; /* Sky blue */
-      color: #ffffff; /* white text */
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      margin: 0;
-    }
-    h1 {
-      font-size: 48px;
-      color: #00aaff;
-    }
-    p {
-      font-size: 20px;
-      color: #ffffff;
-    }
-    .logo {
-      max-width: 200px;
-      margin-bottom: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+  <meta name="snipcart-api-key" content="YOUR_PUBLIC_SNIPCART_API_KEY_HERE">
 </head>
 <body>
-  <!-- Add your logo below if you have one -->
-   <img src="images/logo.png" alt="Luck of the Draw Golf Logo" class="logo"> 
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Luck of the Draw Logo">
+      <h1>Luck of the Draw Golf</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="snipcart-checkout">Cart</button></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>🍀 Luck of the Draw Golf</h1>
-  <p>Golf apparel and tools for the casually lucky golfer.</p>
+  <main>
+    <section class="hero">
+      <img src="logo.jpg" alt="Hero Logo">
+      <h2>Premium Apparel & Gear for the Bold Golfer</h2>
+      <a href="#shop" class="btn">Shop Now</a>
+    </section>
+
+    <section id="shop" class="shop">
+      <h3>Shop Golf Gear</h3>
+      <div class="products">
+        <div class="product">
+          <img src="shirt1.jpg" alt="Premium Golf Polo">
+          <h4>Premium Golf Polo</h4>
+          <p>$49.99</p>
+          <button class="snipcart-add-item"
+            data-item-id="polo-001"
+            data-item-name="Premium Golf Polo"
+            data-item-price="49.99"
+            data-item-url="/"
+            data-item-description="High-performance, moisture-wicking golf polo."
+            data-item-image="shirt1.jpg">
+            Add to cart
+          </button>
+        </div>
+        <!-- Add more product blocks here -->
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h3>About Us</h3>
+      <p>Golf isn’t just a game—it’s a gamble. Luck of the Draw Golf was born from the love of taking chances and hitting that perfect draw.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact</h3>
+      <p>Email us at: contact@luckofthedrawgolf.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luck of the Draw Golf. All rights reserved.</p>
+  </footer>
+
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_SNIPCART_API_KEY_HERE"></div>
 </body>
 </html>

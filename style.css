@@ -173,9 +173,11 @@ footer {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
+  padding: 0;
 }
+
 
 .product-card {
   background: #f9f9f9;
@@ -183,8 +185,11 @@ footer {
   border-radius: 12px;
   padding: 20px;
   width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 .product-card:hover {
   transform: translateY(-5px);
@@ -227,4 +232,11 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }

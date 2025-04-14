@@ -113,6 +113,16 @@ margin-top: 20px;
   color: #000;
 }
 
+.hero-text {
+  flex: 1 1 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; /* This adds space between the title, paragraph, and button */
+}
+
+
 .hero-image {
   flex: 1 1 400px;
   text-align: center;

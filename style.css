@@ -104,11 +104,14 @@ nav ul li button:hover {
 }
 
 .product-section h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 40px;
   position: relative;
-  text-align: center;
 }
+
 
 .product-section h2::after {
   content: "";

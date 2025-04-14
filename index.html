@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Luck of the Draw Golf</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js" defer></script>
   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
-  <meta name="snipcart-api-key" content="ZmI2OWVkZTItYWY4ZS00YjAzLWI5YzktYTlhMWMzOTBiOWJjNjM4ODAyNDY3ODE4MTA2NzAy">
+  <meta name="snipcart-api-key" content="ZmI2OWVkZTItYWY4ZS00YjAzLWI5YzktYTlhMWMzOTBiOWJjNjM4ODAyNDY3ODE4MTA2NzAy" />
 </head>
+
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.jpg" alt="Luck of the Draw Logo">
+      <img src="images/logo.jpg" alt="Luck of the Draw Logo" />
       <h1>Luck of the Draw Golf</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#hats">Golf Hats</a></li>
+        <li><a href="#gear">Golf Gear</a></li>
+        <li><a href="#tools">Golf Tools</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><button class="snipcart-checkout">Cart</button></li>
       </ul>
@@ -27,60 +29,78 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img src="logo.jpg" alt="Hero Logo">
+    <section id="hero" class="hero">
+      <img src="images/logo.jpg" alt="Hero Logo" />
       <h2>Premium Apparel & Gear for the Bold Golfer</h2>
-      <a href="#shop" class="btn">Shop Now</a>
+      <a href="#gear" class="btn">Shop Now</a>
     </section>
 
-<section class="featured-products">
-  <div class="container">
-    <h2 class="section-title">Featured Gear</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="images/draw_hat.jpg" alt="Draw Line Hat">
-        <h3>Draw Line Hat</h3>
-        <p class="price">$24.99</p>
-        <button 
-          class="snipcart-add-item"
-          data-item-id="draw-hat-001"
-          data-item-name="Draw Line Hat"
-          data-item-price="24.99"
-          data-item-url="/"
-          data-item-image="images/draw_hat.jpg">
-          Add to Cart
-        </button>
-      </div>
-
-      <section id="shop" class="shop">
-      <h3>Shop Golf Gear</h3>
+    <section id="hats" class="product-section">
+      <h2>Golf Hats</h2>
       <div class="products">
         <div class="product">
-          <img src="shirt1.jpg" alt="Premium Golf Polo">
+          <img src="images/draw_hat.jpg" alt="Draw Line Hat" />
+          <h4>Draw Line Hat</h4>
+          <p>$24.99</p>
+          <button 
+            class="snipcart-add-item"
+            data-item-id="hat-001"
+            data-item-name="Draw Line Hat"
+            data-item-price="24.99"
+            data-item-url="/"
+            data-item-image="images/draw_hat.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gear" class="product-section">
+      <h2>Golf Gear</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/shirt1.jpg" alt="Premium Golf Polo" />
           <h4>Premium Golf Polo</h4>
           <p>$49.99</p>
           <button class="snipcart-add-item"
-            data-item-id="polo-001"
+            data-item-id="gear-001"
             data-item-name="Premium Golf Polo"
             data-item-price="49.99"
             data-item-url="/"
-            data-item-description="High-performance, moisture-wicking golf polo."
-            data-item-image="shirt1.jpg">
-            Add to cart
+            data-item-image="images/shirt1.jpg">
+            Add to Cart
           </button>
         </div>
-        <!-- Add more product blocks here -->
+      </div>
+    </section>
+
+    <section id="tools" class="product-section">
+      <h2>Golf Tools</h2>
+      <div class="products">
+        <div class="product">
+          <img src="images/golf_tool.jpg" alt="Ball Marker Tool" />
+          <h4>Ball Marker Tool</h4>
+          <p>$12.99</p>
+          <button class="snipcart-add-item"
+            data-item-id="tool-001"
+            data-item-name="Ball Marker Tool"
+            data-item-price="12.99"
+            data-item-url="/"
+            data-item-image="images/golf_tool.jpg">
+            Add to Cart
+          </button>
+        </div>
       </div>
     </section>
 
     <section id="about" class="about">
-      <h3>About Us</h3>
+      <h2>About Us</h2>
       <p>Golf isn’t just a game—it’s a gamble. Luck of the Draw Golf was born from the love of taking chances and hitting that perfect draw.</p>
     </section>
 
     <section id="contact" class="contact">
-      <h3>Contact</h3>
-      <p>Email us at: contact@luckofthedrawgolf.com</p>
+      <h2>Contact</h2>
+      <p>Email us at: <a href="mailto:contact@luckofthedrawgolf.com">contact@luckofthedrawgolf.com</a></p>
     </section>
   </main>
 

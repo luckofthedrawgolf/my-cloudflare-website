@@ -10,45 +10,53 @@
   <meta name="snipcart-api-key" content="ZmI2OWVkZTItYWY4ZS00YjAzLWI5YzktYTlhMWMzOTBiOWJjNjM4ODAyNDY3ODE4MTA2NzAy">
 </head>
 <body>
-  <header class="site-header">
-    <div class="top-banner">
-      <p>3X Rewards + Free Shipping with Luck of the Draw Rewards</p>
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Luck of the Draw Logo">
+      <h1>Luck of the Draw Golf</h1>
     </div>
-    <div class="logo-nav">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Luck of the Draw Logo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button class="snipcart-checkout">Cart</button></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="snipcart-checkout">Cart</button></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Upgrade Your Golf Game</h1>
-          <p>Premium Apparel & Gear for the Bold Golfer</p>
-          <a href="#shop" class="btn">Shop Now</a>
-        </div>
-        <div class="hero-image">
-          <img src="images/hero-clubs.jpg" alt="Golf Clubs">
-        </div>
-      </div>
+      <img src="logo.jpg" alt="Hero Logo">
+      <h2>Premium Apparel & Gear for the Bold Golfer</h2>
+      <a href="#shop" class="btn">Shop Now</a>
     </section>
 
-    <section id="shop" class="shop">
-      <h2>Shop Golf Gear</h2>
+<section class="featured-products">
+  <div class="container">
+    <h2 class="section-title">Featured Gear</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/draw_hat.jpg" alt="Draw Line Hat">
+        <h3>Draw Line Hat</h3>
+        <p class="price">$24.99</p>
+        <button 
+          class="snipcart-add-item"
+          data-item-id="draw-hat-001"
+          data-item-name="Draw Line Hat"
+          data-item-price="24.99"
+          data-item-url="/"
+          data-item-image="images/draw_hat.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <section id="shop" class="shop">
+      <h3>Shop Golf Gear</h3>
       <div class="products">
         <div class="product">
-          <img src="images/shirt1.jpg" alt="Premium Golf Polo">
+          <img src="shirt1.jpg" alt="Premium Golf Polo">
           <h4>Premium Golf Polo</h4>
           <p>$49.99</p>
           <button class="snipcart-add-item"
@@ -57,7 +65,7 @@
             data-item-price="49.99"
             data-item-url="/"
             data-item-description="High-performance, moisture-wicking golf polo."
-            data-item-image="images/shirt1.jpg">
+            data-item-image="shirt1.jpg">
             Add to cart
           </button>
         </div>
@@ -66,17 +74,17 @@
     </section>
 
     <section id="about" class="about">
-      <h2>About Us</h2>
+      <h3>About Us</h3>
       <p>Golf isn’t just a game—it’s a gamble. Luck of the Draw Golf was born from the love of taking chances and hitting that perfect draw.</p>
     </section>
 
     <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Email us at: <a href="mailto:contact@luckofthedrawgolf.com">contact@luckofthedrawgolf.com</a></p>
+      <h3>Contact</h3>
+      <p>Email us at: contact@luckofthedrawgolf.com</p>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <p>&copy; 2025 Luck of the Draw Golf. All rights reserved.</p>
   </footer>
 

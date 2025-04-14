@@ -1,17 +1,23 @@
-/* Global styling for all screens */
+/* Global text color */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #333;  /* Default text color is dark gray */
     margin: 0;
     padding: 0;
 }
 
+/* Green color for header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Green background for header */
+    color: white;              /* White text on the header */
     padding: 20px;
     text-align: center;
+}
+
+/* Green color for paragraphs */
+p {
+    color: #4CAF50;  /* Green text for paragraphs */
 }
 
 footer {
@@ -29,24 +35,21 @@ section {
     text-align: center;
 }
 
-/* Media Query for Mobile (phones, up to 768px) */
+/* Media Queries */
 @media (max-width: 768px) {
     header {
-        padding: 15px;  /* Slightly smaller padding on mobile */
+        padding: 15px;
     }
-
     section {
-        padding: 15px;  /* Slightly smaller padding on mobile */
+        padding: 15px;
     }
 }
 
-/* Media Query for Large Screens (desktops, tablets, etc.) */
 @media (min-width: 769px) {
     header {
-        padding: 30px;  /* Larger padding on desktop for more space */
+        padding: 30px;
     }
-
     section {
-        padding: 30px;  /* More space on desktop screens */
+        padding: 30px;
     }
 }

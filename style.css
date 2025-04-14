@@ -107,6 +107,7 @@ nav ul li button:hover {
   font-size: 2rem;
   margin-bottom: 40px;
   position: relative;
+  text-align: center;
 }
 
 .product-section h2::after {

@@ -1,3 +1,4 @@
+/* Global styling for all screens */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -26,4 +27,26 @@ footer {
 section {
     padding: 20px;
     text-align: center;
+}
+
+/* Media Query for Mobile (phones, up to 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;  /* Slightly smaller padding on mobile */
+    }
+
+    section {
+        padding: 15px;  /* Slightly smaller padding on mobile */
+    }
+}
+
+/* Media Query for Large Screens (desktops, tablets, etc.) */
+@media (min-width: 769px) {
+    header {
+        padding: 30px;  /* Larger padding on desktop for more space */
+    }
+
+    section {
+        padding: 30px;  /* More space on desktop screens */
+    }
 }

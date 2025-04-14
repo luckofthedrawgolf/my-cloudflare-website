@@ -241,3 +241,15 @@ h2 {
   width: 100%;
   display: block;
 }
+
+.product-section h2 {
+  width: 100%;
+  text-align: center !important;
+  display: block;
+  font-size: 2rem;
+  margin: 40px 0;
+}
+
+h2 {
+  text-align: center !important;
+}

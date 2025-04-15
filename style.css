@@ -281,7 +281,8 @@ h2 a:hover {
 }
 /* === MODERN HERO STYLE === */
 .hero {
-  background: url("images/straight lod.png") no-repeat center center/cover;
+  .hero {
+  background: url("images/straight-lod.png") no-repeat center center/cover;
   color: #fff;
   height: 100vh;
   display: flex;

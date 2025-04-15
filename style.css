@@ -52,5 +52,12 @@
   background-color: #ddd;
 }
 
+<section class="hero">
+  <div class="hero-content">
+    <h1>Luck of the Draw Golf</h1>
+    <p>Premium Apparel & Gear for the Bold Golfer</p>
+    <a href="shop.html" class="btn">Shop Now</a>
+  </div>
+</section>
 
 

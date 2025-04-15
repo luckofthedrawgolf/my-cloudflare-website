@@ -1,279 +1,56 @@
-/* === RESET & BASE === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #000;
-  line-height: 1.6;
-}
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-nav ul li a,
-nav ul li button {
-  text-decoration: none;
-  color: #fff;
-  background: none;
-  border: none;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-nav ul li a:hover,
-nav ul li button:hover {
-  color: #ccc;
-}
-
-
-
-
-
-
-
-.hero .btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-/* === PRODUCT SECTIONS === */
-.product-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.product-section h2 {
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-
-.product-section h2::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 60px;
-  background: #000;
-  margin: 10px auto 0;
-}
-
-/* === PRODUCT GRID === */
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.product {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.product h4 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.product p {
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.product button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-  background-color: #333;
-}
-
-/* === ABOUT & CONTACT === */
-.about,
-.contact {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about p,
-.contact p {
-  max-width: 600px;
-  margin: auto;
-  font-size: 1.1rem;
-}
-
-.contact a {
-  color: #000;
-  text-decoration: underline;
-}
-
-.contact a:hover {
-  color: #555;
-}
-
-/* === FOOTER === */
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 25px 15px;
-  font-size: 0.9rem;
-}
-
-/* === MOBILE STYLING === */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-  }
-
-  .products {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero h2 {
-    font-size: 1.6rem;
-  }
-
-  .product {
-    width: 90%;
-  }
-}
-
-
-
-.product-section h2 {
-  width: 100%;
-  text-align: center !important;
-  display: block;
-  font-size: 2rem;
-  margin: 40px 0;
-}
-
-
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  width: 100%;
-}
-
-.logo h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
-
-h2 a {
-  color: black;
-  text-decoration: none;
-}
-
-h2 a:hover {
-  text-decoration: underline;
-}
 /* === MODERN HERO STYLE === */
 .hero {
-  .hero {
+  position: relative;
   background: url("images/backgroundlogo.png") no-repeat center center/cover;
-  color: #fff;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   text-align: center;
-  position: relative;
+  color: #fff;
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
-  padding: 20px;
 }
 
 .hero h1 {
   font-size: 3rem;
+  font-weight: bold;
   margin-bottom: 20px;
-  font-weight: 800;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 30px;
 }
 
 .hero .btn {
   background-color: #fff;
   color: #000;
-  font-weight: bold;
   padding: 14px 30px;
+  font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
   transition: background 0.3s ease;
 }
 
+.hero .btn:hover {
+  background-color: #ddd;
+}
 
 
 

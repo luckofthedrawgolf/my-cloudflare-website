@@ -1,15 +1,17 @@
 /* === MODERN HERO STYLE === */
 .hero {
-  position: relative;
-  background: url("images/Logo3.jpg") no-repeat center center/cover;
-  height: 70vh;
+  background-image: url('images/Logo3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; /* You can tweak this height */
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1;
+  align-items: center;
+  color: white;
   text-align: center;
-  color: #fff;
 }
+
 
 .hero::before {
   content: "";

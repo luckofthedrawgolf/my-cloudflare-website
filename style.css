@@ -152,3 +152,7 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
 }
+/* this is the color of the letters for thebold and shop now */
+.hero-content p {
+  color: black !important;
+}

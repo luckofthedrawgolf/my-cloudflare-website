@@ -246,3 +246,14 @@ p {
 .product-btn:hover {
   background-color: #333;
 }
+
+.contact-center {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.contact-center a {
+  color: #fff;
+  text-decoration: underline;
+}

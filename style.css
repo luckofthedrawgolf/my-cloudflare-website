@@ -257,3 +257,7 @@ p {
   color: #fff;
   text-decoration: underline;
 }
+#contact a {
+  color: #000; /* Or another color that stands out */
+  text-decoration: underline;
+}

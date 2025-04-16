@@ -247,22 +247,15 @@ p {
   background-color: #333;
 }
 
+
+/* === CONTACT SECTION === */
 .contact-center {
   text-align: center;
+  color: black; /* or whatever your text color is */
   padding: 40px 20px;
-  color: #fff;
 }
 
 .contact-center a {
-  color: #fff;
+  color: black; /* make the link visible on white background */
   text-decoration: underline;
-}
-#contact a {
-  color: #000; /* Or another color that stands out */
-  text-decoration: underline;
-}
-
-#contact {
-  color: #000; /* Black text for headings and paragraph */
-  text-align: center; /* Optional: keep it centered */
 }

@@ -261,3 +261,8 @@ p {
   color: #000; /* Or another color that stands out */
   text-decoration: underline;
 }
+
+#contact {
+  color: #000; /* Black text for headings and paragraph */
+  text-align: center; /* Optional: keep it centered */
+}

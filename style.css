@@ -176,3 +176,49 @@ p {
   text-align: center;
   color: black;
 }
+
+/* === PRODUCT WRAPPER BACKGROUND === */
+.product-wrapper {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* === INDIVIDUAL PRODUCT SECTIONS === */
+.product-section {
+  margin-bottom: 40px;
+}
+
+/* === PRODUCT CARDS === */
+.product {
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 280px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* === BUTTONS === */
+.snipcart-add-item {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.snipcart-add-item:hover {
+  background-color: #fff;
+  color: #000;
+}

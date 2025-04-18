@@ -393,3 +393,19 @@ p {
     justify-content: center;
   }
 }
+
+.info-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.info-links a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.info-links a:hover {
+  text-decoration: underline;
+}

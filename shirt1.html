@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Golf T-Shirt - Luck of the Draw</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #fff;
+    }
+    .product-container {
+      display: flex;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .thumbnails {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .thumbnails img {
+      width: 60px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .thumbnails img.active {
+      border-color: black;
+    }
+    .main-image {
+      flex: 1;
+    }
+    .main-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    .product-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-details h1 {
+      font-size: 24px;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .sizes button {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+      cursor: pointer;
+    }
+    .sizes button:hover {
+      border-color: black;
+    }
+    .add-to-cart {
+      padding: 15px;
+      background: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .description {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <!-- Thumbnails -->
+    <div class="thumbnails">
+      <img src="images/shirt-front.jpg" alt="Front" class="thumb active" onclick="swapImage(this)" />
+      <img src="images/shirt-back.jpg" alt="Back" class="thumb" onclick="swapImage(this)" />
+    </div>
+
+    <!-- Main Image -->
+    <div class="main-image">
+      <img src="images/shirt-front.jpg" alt="Main" id="mainImage" />
+    </div>
+
+    <!-- Product Info -->
+    <div class="product-details">
+      <div>
+        <h1>Classic Golf T-Shirt</h1>
+        <p class="price">$49.99</p>
+
+        <h4>Select Size</h4>
+        <div class="sizes">
+          <button>XS</button>
+          <button>S</button>
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+          <button>XXL</button>
+        </div>
+
+        <button class="snipcart-add-item add-to-cart"
+          data-item-id="shirt-001"
+          data-item-name="Classic Golf T-Shirt"
+          data-item-price="49.99"
+          data-item-url="/shirt.html"
+          data-item-image="images/shirt-front.jpg">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="description">
+        <p>
+          The Classic Golf T-Shirt by Luck of the Draw is built for comfort, style, and the perfect tee box look.
+          Breathable cotton fabric, modern athletic fit, and a design that keeps the swing smooth and swagger high.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Snipcart integration -->
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+  <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+
+  <!-- Image swap script -->
+  <script>
+    function swapImage(el) {
+      document.getElementById('mainImage').src = el.src;
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+    }
+  </script>
+</body>
+</html>
 

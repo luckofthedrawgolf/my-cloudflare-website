@@ -336,3 +336,13 @@ p {
   object-fit: contain;
   margin-bottom: 10px;
 }
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.product-link:hover {
+  opacity: 0.95;
+}

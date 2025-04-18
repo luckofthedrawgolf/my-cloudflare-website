@@ -259,3 +259,24 @@ p {
   color: black; /* make the link visible on white background */
   text-decoration: underline;
 }
+
+/* HAT PAGE ONLY */
+.hats-page .product-section {
+  text-align: center;
+}
+
+.hats-page .product {
+  display: inline-block;
+  max-width: 220px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.hats-page .product img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

@@ -354,18 +354,27 @@ p {
   gap: 40px;
   flex-wrap: wrap;
 }
-
 .product-card img {
     max-height: 180px;
-    width: auto;
+    width: 100%;              /* All product images fill the card by default */
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;               /* This line won't hurt, just helps if inline-block */
 }
+
+/* BUT override specifically for the hat image */
+.hat-img {
+    width: auto !important;    /* Override the 100% width */
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
 
 }
 
@@ -692,10 +701,16 @@ hr {
     color: #000;                    /* Keeps it sharp and matches your clean look */
 }
 
+/* This keeps the hat image centered without affecting the others */
 .hat-img {
-    display: block;
-    margin: 0 auto;          /* This is the piece that actually centers the image */
+    width: auto !important;
     max-height: 150px;
     object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+
 

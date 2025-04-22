@@ -695,9 +695,7 @@ hr {
 .hat-img {
     max-height: 180px;
     width: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    align-self: center;    /* THIS is the key fix */
     margin-bottom: 10px;
     border-radius: 10px;
     object-fit: contain;

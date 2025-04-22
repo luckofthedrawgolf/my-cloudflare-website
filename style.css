@@ -179,17 +179,33 @@ p {
 
 /* === PRODUCT WRAPPER BACKGROUND === */
 .product-wrapper {
-  background-color: #000;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
+    background-color: #000; /* fallback in case image doesn't load */
+    background-image: url('images/1162abce-a974-4a2c-aedc-69b1253f1e63.png'); /* your golf hole image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
 }
-.product-section-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+
+.product-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity to make the products pop more */
+    z-index: 1;
 }
+
+.product-wrapper > * {
+    position: relative;
+    z-index: 2;
+}
+
 
 
 /* === INDIVIDUAL PRODUCT SECTIONS === */

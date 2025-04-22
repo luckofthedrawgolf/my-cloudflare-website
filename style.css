@@ -356,15 +356,16 @@ p {
 }
 
 .product-card img {
-    max-height: 180px;      /* Changed from 150px to 180px for balance */
-    width: auto;            /* Keeps proportions correct */
-    object-fit: contain;    /* Ensures full image shows without distortion */
-    margin-bottom: 10px;    /* Space below the image before the title */
-    border-radius: 10px;    /* Keeps your nice rounded edges */
-    display: block;         /* Ensures proper alignment */
-    margin-left: auto;      /* Center the image horizontally */
-    margin-right: auto;     /* Center the image horizontally */
+    max-height: 180px;          /* Controls height */
+    width: auto;                /* Prevents the image from stretching horizontally */
+    object-fit: contain;        /* Keeps full image visible */
+    margin-bottom: 10px;        /* Space below image */
+    border-radius: 10px;        /* Rounded corners */
+    display: block;             /* Allows margin auto centering */
+    margin-left: auto;          /* Center horizontally */
+    margin-right: auto;         /* Center horizontally */
 }
+
 
 
 }

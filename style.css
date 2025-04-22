@@ -328,7 +328,7 @@ p {
     color: black;
     border-radius: 10px;
     padding: 20px;
-    width: 180px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  /* This forces the button to the bottom */

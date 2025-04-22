@@ -694,10 +694,8 @@ hr {
 
 .hat-img {
     display: block;
-    margin: 0 auto;             /* ✅ Centers the image horizontally */
-    max-height: 180px;
-    width: auto;                /* ✅ Prevents it from stretching weird */
-    border-radius: 10px;
+    margin: 0 auto;          /* This is the piece that actually centers the image */
+    max-height: 150px;
     object-fit: contain;
 }
 

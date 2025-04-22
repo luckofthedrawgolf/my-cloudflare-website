@@ -243,7 +243,7 @@ p {
 
 .product-btn {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: auto;
   padding: 12px 24px;
   font-weight: bold;
   background-color: #000;
@@ -258,6 +258,8 @@ p {
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
 }
 
 /* === CONTACT SECTION === */
@@ -332,6 +334,8 @@ p {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+ position: relative;
+ overflow: hidden;
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* <<< Adds soft floating shadow */
  transition: transform 0.3s ease, box-shadow 0.3s ease; /* <<< Smooth animation */
 }

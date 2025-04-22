@@ -691,3 +691,14 @@ hr {
     margin-top: 10px;                /* Keeps it from smashing against the title */
     color: #000;                    /* Keeps it sharp and matches your clean look */
 }
+
+.hat-img {
+    max-height: 180px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: contain; /* Keeps the proportions clean */
+}

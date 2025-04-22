@@ -324,27 +324,24 @@ p {
 }
 
 .product-card {
-  background-color: #fff;
-  color: black;
-  border-radius: 10px;
-  padding: 20px;
-  width: 180px;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
- position: relative;
- overflow: hidden;
- box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* <<< Adds soft floating shadow */
- transition: transform 0.3s ease, box-shadow 0.3s ease; /* <<< Smooth animation */
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* This forces the button to the bottom */
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft floating shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
 }
-
 .product-card:hover {
-    transform: translateY(-5px); /* <<< Lifts the card up slightly */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* <<< Deeper shadow on hover */
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 

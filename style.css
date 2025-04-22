@@ -356,12 +356,16 @@ p {
 }
 
 .product-card img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 10px;
+    max-height: 180px;      /* Changed from 150px to 180px for balance */
+    width: auto;            /* Keeps proportions correct */
+    object-fit: contain;    /* Ensures full image shows without distortion */
+    margin-bottom: 10px;    /* Space below the image before the title */
+    border-radius: 10px;    /* Keeps your nice rounded edges */
+    display: block;         /* Ensures proper alignment */
+    margin-left: auto;      /* Center the image horizontally */
+    margin-right: auto;     /* Center the image horizontally */
+}
+
 
 }
 

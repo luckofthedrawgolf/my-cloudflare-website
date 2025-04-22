@@ -338,7 +338,7 @@ p {
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft floating shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
-    min-height: 400px;            /* Keeps the cards equal height */
+    min-height: 350px;            /* Keeps the cards equal height */
     overflow: hidden;             /* Prevents the button from breaking out */
 
 }

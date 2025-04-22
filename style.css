@@ -700,5 +700,6 @@ hr {
     margin-right: auto;
     margin-bottom: 10px;
     border-radius: 10px;
-    object-fit: contain; /* Keeps the proportions clean */
+    object-fit: contain;
 }
+

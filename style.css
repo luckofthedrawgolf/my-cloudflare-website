@@ -663,4 +663,6 @@ hr {
     letter-spacing: 0.5px;
     margin-top: 15px;
     margin-bottom: 5px;
+    text-align: center;
+    white-space: nowrap; /* <<< This forces it to stay on one line */
 }

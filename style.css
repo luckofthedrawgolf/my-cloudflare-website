@@ -179,7 +179,7 @@ p {
 
 /* === PRODUCT WRAPPER BACKGROUND === */
 .product-wrapper {
-    background: linear-gradient(to bottom, #000000, #1a1a1a); /* smooth gradient background */
+    background: background: linear-gradient(to bottom, #000000, #2a2a2a); /* smooth gradient background */
     color: #fff;
     padding: 60px 20px;
     text-align: center;

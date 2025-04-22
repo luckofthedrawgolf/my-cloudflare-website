@@ -243,7 +243,7 @@ p {
 
 .product-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 12px 24px;
   font-weight: bold;
   background-color: #000;
@@ -320,7 +320,7 @@ p {
 }
 
 .product-card {
-  background: white;
+  background-color: #fff;
   color: black;
   border-radius: 10px;
   padding: 20px;
@@ -332,7 +332,15 @@ p {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* <<< Adds soft floating shadow */
+ transition: transform 0.3s ease, box-shadow 0.3s ease; /* <<< Smooth animation */
 }
+
+.product-card:hover {
+    transform: translateY(-5px); /* <<< Lifts the card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* <<< Deeper shadow on hover */
+}
+
 
 .products {
   display: flex;
@@ -344,7 +352,7 @@ p {
 .product-card img {
   width: 100%;
   height: auto;
-  max-height: 120px;
+  max-height: 150px;
   object-fit: contain;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -669,7 +677,7 @@ hr {
 }
 .product-card p {
     font-size: 1rem;                /* Clean, readable size */
-    margin-bottom: 15px;            /* Adds breathing room above the "shop" button */
-    margin-top: 5px;                /* Keeps it from smashing against the title */
+    margin-bottom: 20px;            /* Adds breathing room above the "shop" button */
+    margin-top: 10px;                /* Keeps it from smashing against the title */
     color: #000;                    /* Keeps it sharp and matches your clean look */
 }

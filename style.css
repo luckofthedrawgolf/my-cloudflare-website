@@ -666,3 +666,9 @@ hr {
     text-align: center;
     white-space: nowrap; /* <<< This forces it to stay on one line */
 }
+.product-card p {
+    font-size: 1rem;                /* Clean, readable size */
+    margin-bottom: 15px;            /* Adds breathing room above the "shop" button */
+    margin-top: 5px;                /* Keeps it from smashing against the title */
+    color: #000;                    /* Keeps it sharp and matches your clean look */
+}

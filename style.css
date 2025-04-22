@@ -249,7 +249,7 @@ p {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: border: 2px solid #fff; /* Adds the clean white pinstripe */
+  border: 2px solid #fff; /* Adds the clean white pinstripe */
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }

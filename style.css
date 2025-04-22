@@ -706,7 +706,6 @@ hr {
 }
 
 .product-card img.hat-img {
-    width: auto !important;
     max-height: 150px;
     display: block;
     margin-left: auto;

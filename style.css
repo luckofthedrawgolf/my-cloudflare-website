@@ -356,7 +356,7 @@ p {
 }
 .product-card img {
     max-height: 180px;
-    width: 100%;              /* All product images fill the card by default */
+    
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 10px;

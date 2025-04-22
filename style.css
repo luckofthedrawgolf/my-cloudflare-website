@@ -249,15 +249,16 @@ p {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: none;
+  border: border: 2px solid #fff; /* Adds the clean white pinstripe */
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
 .product-btn:hover {
-  background-color: #333;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
 }
-
 
 /* === CONTACT SECTION === */
 .contact-center {

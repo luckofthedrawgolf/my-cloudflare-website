@@ -179,11 +179,7 @@ p {
 
 /* === PRODUCT WRAPPER BACKGROUND === */
 .product-wrapper {
-    background-color: #000; /* fallback in case image doesn't load */
-    background-image: url("images/golfhole.jpg"); /* your golf hole image */
-    background-size: cover;
-    background-position: center 60%;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #000000, #1a1a1a); /* smooth gradient background */
     color: #fff;
     padding: 60px 20px;
     text-align: center;

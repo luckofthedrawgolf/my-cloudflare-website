@@ -180,7 +180,7 @@ p {
 /* === PRODUCT WRAPPER BACKGROUND === */
 .product-wrapper {
     background-color: #000; /* fallback in case image doesn't load */
-    background-image: url('images/golfhole.jpg); /* your golf hole image */
+    background-image: url("images/golfhole.jpg"); /* your golf hole image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

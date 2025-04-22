@@ -181,8 +181,8 @@ p {
 .product-wrapper {
     background-color: #000; /* fallback in case image doesn't load */
     background-image: url("images/golfhole.jpg"); /* your golf hole image */
-    background-size: cover;
-    background-position: center 75%;
+    background-size: contain;
+    background-position: center top;
     background-repeat: no-repeat;
     color: #fff;
     padding: 60px 20px;

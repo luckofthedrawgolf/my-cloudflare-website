@@ -186,15 +186,6 @@ p {
     position: relative;
 }
 
-.product-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity to make the products pop more */
-    z-index: 1;
 }
 
 .product-wrapper > * {

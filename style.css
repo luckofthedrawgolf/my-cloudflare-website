@@ -242,18 +242,19 @@ p {
 }
 
 .product-btn {
-  display: block;
-  margin-top: 20px;
+  display: inline-block;
+  margin-top: auto; /* this helps it stay at the bottom */
   padding: 12px 24px;
   font-weight: bold;
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  border: 2px solid #fff; /* Adds the clean white pinstripe */
+  border: 2px solid #fff;
   border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  align-self: center;
+  transition: background-color 0.3s ease;
+  align-self: stretch; /* <<< ADD THIS LINE */
 }
+
 
 .product-btn:hover {
     background-color: #fff;

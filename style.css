@@ -814,5 +814,10 @@ hr {
     background-color: transparent;
   }
 }
+@media (max-width: 768px) {
+  .hamburger.active {
+    color: white !important;
+  }
+}
 
 

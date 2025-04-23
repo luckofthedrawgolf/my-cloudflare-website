@@ -781,6 +781,12 @@ hr {
     display: flex; /* Show links when .active is added by JS */
   }
 
+ .nav-links.active li a {
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
   .nav-links li {
     margin: 15px 0;
   }

@@ -827,12 +827,14 @@ hr {
   display: none;
 }
 
-.hamburger.active .bar {
+#hamburger.active .bar {
   display: none;
 }
 
-.hamburger.active .close {
+#hamburger.active .close {
   display: block;
 }
+
+
 
 

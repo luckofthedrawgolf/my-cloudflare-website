@@ -7,11 +7,11 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
 
-  if (navLinks.classList.contains('active')) {
-    barIcon.style.display = 'none';        // Hide hamburger bars
-    closeIcon.style.display = 'block';     // Show X
+  if (hamburger.classList.contains('active')) {
+    barIcon.style.display = 'none';       // Hide hamburger (3 bars)
+    closeIcon.style.display = 'block';    // Show X icon
   } else {
-    barIcon.style.display = 'block';       // Show hamburger bars
-    closeIcon.style.display = 'none';      // Hide X
+    barIcon.style.display = 'block';      // Show hamburger
+    closeIcon.style.display = 'none';     // Hide X icon
   }
 });

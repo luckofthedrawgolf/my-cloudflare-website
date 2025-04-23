@@ -745,6 +745,16 @@ hr {
   cursor: pointer;
   color: black; /* or black depending on your site */
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001; /* keeps it above the dropdown */
+  }
+}
+
 
 /* Show the nav links normally on desktop */
 .nav-links {

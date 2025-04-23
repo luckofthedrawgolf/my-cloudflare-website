@@ -846,14 +846,6 @@ hr {
   color: white;
 }
 
-/* When hamburger is active: hide bars, show X */
-.hamburger.active .bar {
-  display: none;
-}
-
-.hamburger.active .close {
-  display: block;
-}
 
 /* Mobile behavior */
 @media (max-width: 768px) {

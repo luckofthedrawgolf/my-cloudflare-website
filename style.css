@@ -835,6 +835,54 @@ hr {
   display: block;
 }
 
+/* Default state: show bars, hide X */
+.hamburger .bar {
+  display: block;
+}
+
+.hamburger .close {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+/* When hamburger is active: hide bars, show X */
+.hamburger.active .bar {
+  display: none;
+}
+
+.hamburger.active .close {
+  display: block;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li a {
+    color: white;
+    padding: 10px 0;
+  }
+}
 
 
 

@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
 
-  if (hamburger.classList.contains('active')) {
+  if (navLinks.classList.contains('active')) {  // <-- FIXED THIS LINE
     barIcon.style.display = 'none';       // Hide hamburger (3 bars)
     closeIcon.style.display = 'block';    // Show X icon
   } else {

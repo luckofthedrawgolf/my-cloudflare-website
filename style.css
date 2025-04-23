@@ -828,17 +828,6 @@ hr {
 }
 
 
-/* Default state: show bars, hide X */
-.hamburger .bar {
-  display: block;
-}
-
-.hamburger .close {
-  display: none;
-  font-size: 30px;
-  color: white;
-}
-
 
 /* Mobile behavior */
 @media (max-width: 768px) {

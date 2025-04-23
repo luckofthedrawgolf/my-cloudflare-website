@@ -742,7 +742,7 @@ hr {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: white; /* or black depending on your site */
+  color: black; /* or black depending on your site */
 }
 
 /* Show the nav links normally on desktop */

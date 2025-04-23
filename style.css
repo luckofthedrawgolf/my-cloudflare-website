@@ -789,6 +789,9 @@ hr {
 @media (min-width: 769px) {
   .nav-links {
     display: flex !important;
+    flex-direction: row;
+    background-color: transparent;
   }
 }
+
 

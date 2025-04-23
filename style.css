@@ -756,7 +756,7 @@ hr {
 
 .nav-links li a {
   text-decoration: none;
-  color: white; /* or black if your navbar is light */
+  color: black; /* or black if your navbar is light */
   font-size: 1.2em;
 }
 

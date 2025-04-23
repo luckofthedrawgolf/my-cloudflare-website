@@ -827,13 +827,6 @@ hr {
   display: none;
 }
 
-#hamburger.active .bar {
-  display: none;
-}
-
-#hamburger.active .close {
-  display: block;
-}
 
 /* Default state: show bars, hide X */
 .hamburger .bar {

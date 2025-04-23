@@ -785,4 +785,10 @@ hr {
     margin: 15px 0;
   }
 }
+/* FIX: Make sure nav links show on desktop screens */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
 

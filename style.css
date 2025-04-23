@@ -819,5 +819,20 @@ hr {
     color: white !important;
   }
 }
+.hamburger .bar {
+  display: block;
+}
+
+.hamburger .close {
+  display: none;
+}
+
+.hamburger.active .bar {
+  display: none;
+}
+
+.hamburger.active .close {
+  display: block;
+}
 
 

@@ -70,11 +70,16 @@
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
+@media (max-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1001;
+    height: 40px;
+  }
 }
+
 
 .nav-links {
   list-style: none;

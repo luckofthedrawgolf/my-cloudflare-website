@@ -1,7 +1,7 @@
 window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
-  const barIcon = document.querySelector('.bar');
+  const barIcons = document.querySelectorAll('.bar');  // Grabs ALL bars now!
   const closeIcon = document.querySelector('.close');
 
   hamburger.addEventListener('click', () => {
@@ -9,11 +9,12 @@ window.onload = function() {
     hamburger.classList.toggle('active');
 
     if (hamburger.classList.contains('active')) {
-      barIcon.style.display = 'none';
-      closeIcon.style.display = 'block';
+      barIcons.forEach(bar => bar.style.display = 'none');   // Hide all three bars
+      closeIcon.style.display = 'block';                     // Show the X icon
     } else {
-      barIcon.style.display = 'block';
-      closeIcon.style.display = 'none';
+      barIcons.forEach(bar => bar.style.display = 'block');  // Show all three bars
+      closeIcon.style.display = 'none';                      // Hide the X icon
     }
   });
 };
+

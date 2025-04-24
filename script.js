@@ -1,6 +1,6 @@
 window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.getElementById('navLinks');  // <-- using getElementById here
+  const navLinks = document.querySelector('.nav-links');
   const barIcon = document.querySelector('.bar');
   const closeIcon = document.querySelector('.close');
 

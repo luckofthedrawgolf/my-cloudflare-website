@@ -743,27 +743,10 @@ hr {
   padding: 5px 20px;
 }
 
-/* Hide the hamburger icon by default (on desktop) */
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: black; /* or black depending on your site */
-}
+
 .hamburger.active {
   color: white !important;
 }
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 1001; /* keeps it above the dropdown */
-  }
-}
-
 
 /* Show the nav links normally on desktop */
 .nav-links {

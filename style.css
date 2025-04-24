@@ -767,22 +767,6 @@ hr {
    THIS is the important part:
    When screen is 768px or smaller (mobile)
    ------------------------------ */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show hamburger on mobile */
-  }
-
-  .nav-links {
-    display: none; /* Hide links on mobile by default */
-    flex-direction: column;
-    background-color: black; /* or white if your site is white */
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.active {
-    display: flex; /* Show links when .active is added by JS */
-  }
 
  .nav-links.active li a {
   color: white;

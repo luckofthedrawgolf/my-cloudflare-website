@@ -80,26 +80,32 @@
   }
 }
 
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+@media (min-width: 769px) {
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
+@media (min-width: 769px) {
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
 }
 
-.nav-links li a:hover {
-  color: #555;
+@media (min-width: 769px) {
+  .nav-links li a:hover {
+    color: #555;
+  }
 }
+
 
 /* --- NAVIGATION BAR --- */
 .navbar {
@@ -121,25 +127,30 @@
   color: black;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+@media (min-width: 769px) {
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.2s ease;
+@media (min-width: 769px) {
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .nav-links li a:hover {
+    color: gray;
+  }
 }
 
-.nav-links li a:hover {
-  color: gray;
-}
 /*144-147 makes the top of the homepage a light gray  */
 body {
   background-color: ##ffffff; /* white */

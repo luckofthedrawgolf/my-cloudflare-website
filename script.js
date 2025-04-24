@@ -1,19 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log("SCRIPT LOADED ✅");
-
+window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('#navLinks');
-
-  console.log("hamburger:", hamburger);
-  console.log("navLinks:", navLinks);
-
-  // The rest of your code...
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('#navLinks');
+  const navLinks = document.getElementById('navLinks');  // <-- using getElementById here
   const barIcon = document.querySelector('.bar');
   const closeIcon = document.querySelector('.close');
 
@@ -22,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.classList.toggle('active');
 
     if (hamburger.classList.contains('active')) {
-      barIcon.style.display = 'none';        // Hide hamburger bars
-      closeIcon.style.display = 'block';     // Show X icon
+      barIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
     } else {
-      barIcon.style.display = 'block';       // Show hamburger bars
-      closeIcon.style.display = 'none';      // Hide X icon
+      barIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
     }
   });
-});
+};

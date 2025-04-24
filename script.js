@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('#navLinks');
   const barIcon = document.querySelector('.bar');

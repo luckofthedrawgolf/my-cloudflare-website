@@ -1,4 +1,17 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("SCRIPT LOADED ✅");
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('#navLinks');
+
+  console.log("hamburger:", hamburger);
+  console.log("navLinks:", navLinks);
+
+  // The rest of your code...
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('#navLinks');
   const barIcon = document.querySelector('.bar');

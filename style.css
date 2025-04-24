@@ -763,12 +763,7 @@ hr {
   font-size: 1.2em;
 }
 
-/* ------------------------------
-   THIS is the important part:
-   When screen is 768px or smaller (mobile)
-   ------------------------------ */
-
- .nav-links.active li a {
+.nav-links.active li a {
   color: white;
   padding: 10px 0;
   text-decoration: none;

@@ -884,12 +884,20 @@ hr {
 
   /* Hamburger styling and hide when active */
   .hamburger {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    cursor: pointer;
-  }
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: white;                /* Keep it white for the black banner */
+  z-index: 1002;               /* ← Make sure it sits ABOVE the slogan banner */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #aaa;
+}
+
 
   .hamburger.active {
     display: none;

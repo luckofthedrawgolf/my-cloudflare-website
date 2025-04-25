@@ -855,9 +855,10 @@ hr {
     cursor: pointer;
   }
 
-  .nav-links.active {
-    display: none;
-  }
+  .hamburger.active {
+  display: none;
+}
+
 
   /* Overlay background when drawer is active */
   .overlay {

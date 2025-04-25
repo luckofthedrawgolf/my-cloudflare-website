@@ -815,11 +815,11 @@ hr {
   .nav-links {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 250px;
     background-color: rgba(0, 0, 0, 0.95); /* soft black with a little transparency */
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
     display: flex;

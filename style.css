@@ -820,7 +820,8 @@ hr {
     width: 250px;
     background-color: rgba(0, 0, 0, 0.95); /* soft black with a little transparency */
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -828,10 +829,12 @@ hr {
     align-items: center;
     padding-top: 0;
     gap: 30px; /* space between links */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* soft shadow on the left edge of the drawer */
   }
 
   .nav-links.active {
     transform: translateX(0); /* slide in */
+    opacity: 1;               /* fade in */
   }
 
   /* Drawer nav links */
@@ -846,7 +849,26 @@ hr {
     color: #aaa; /* hover color */
   }
 
-  /* Hide hamburger when drawer is open */
+  /* Close button styling */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .close-btn a {
+    color: white;
+    font-size: 1.1rem;              /* softened size */
+    font-weight: normal;            /* less bold */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .close-btn a:hover {
+    color: #aaa;
+  }
+
+  /* Hamburger styling and hide when active */
   .hamburger {
     position: absolute;
     top: 20px;
@@ -856,45 +878,25 @@ hr {
   }
 
   .hamburger.active {
-  display: none;
-}
+    display: none;
+  }
 
-
-  /* Overlay background when drawer is active */
+  /* Overlay fade */
   .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* soft dark overlay */
-  z-index: 998;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease; /* ← smooth fade-in */
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-.overlay.show {
-  display: block;
-  opacity: 1;
-}
-
-}
-
-.close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.close-btn a {
-  color: white;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.close-btn a:hover {
-  color: #aaa;
+  .overlay.show {
+    display: block;
+    opacity: 1;
+  }
 }

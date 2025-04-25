@@ -809,7 +809,7 @@ hr {
   }
 }
 
-/* === MOBILE DRAWER MENU === */
+/* === MOBILE DRAWER MENU (Remastered for Clean Pro Feel) === */
 @media (max-width: 768px) {
   /* Drawer styles */
   .nav-links {
@@ -818,35 +818,49 @@ hr {
     right: 0;
     height: 100%;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.95); /* soft black with a little transparency */
+    background-color: rgba(0, 0, 0, 0.95);
     transform: translateX(100%);
     opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     z-index: 999;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* centers the links vertically */
+    justify-content: center;
     align-items: center;
     padding-top: 0;
-    gap: 30px; /* space between links */
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* soft shadow on the left edge of the drawer */
+    gap: 25px; /* tightened gap for modern look */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* soft edge shadow */
   }
 
   .nav-links.active {
-    transform: translateX(0); /* slide in */
-    opacity: 1;               /* fade in */
+    transform: translateX(0);
+    opacity: 1;
   }
 
-  /* Drawer nav links */
+  /* Fade-in + slide animation for each nav link */
+  .nav-links li {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .nav-links.active li {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Nav links style */
   .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
-    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
   }
 
   .nav-links li a:hover {
-    color: #aaa; /* hover color */
+    color: #aaa;
+    font-weight: bold;
   }
 
   /* Close button styling */
@@ -858,8 +872,8 @@ hr {
 
   .close-btn a {
     color: white;
-    font-size: 1.1rem;              /* softened size */
-    font-weight: normal;            /* less bold */
+    font-size: 1.1rem;
+    font-weight: normal;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -881,7 +895,7 @@ hr {
     display: none;
   }
 
-  /* Overlay fade */
+  /* Overlay fade styling */
   .overlay {
     position: fixed;
     top: 0;
@@ -892,7 +906,7 @@ hr {
     z-index: 998;
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
   }
 
   .overlay.show {

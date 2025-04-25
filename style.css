@@ -915,9 +915,10 @@ hr {
   }
 }
 
-/* Hide close button on desktop view */
 @media (min-width: 769px) {
+  .hamburger,
   .close-btn {
     display: none;
   }
 }
+

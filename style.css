@@ -914,3 +914,10 @@ hr {
     opacity: 1;
   }
 }
+
+/* Hide close button on desktop view */
+@media (min-width: 769px) {
+  .close-btn {
+    display: none;
+  }
+}

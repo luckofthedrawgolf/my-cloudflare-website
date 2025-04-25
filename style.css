@@ -888,7 +888,7 @@ hr {
   top: 20px;
   right: 20px;
   font-size: 1.8rem;
-  color: white;                /* Keep it white for the black banner */
+  color: #777;                /* Keep it grey */
   z-index: 1002;               /* ← Make sure it sits ABOVE the slogan banner */
   cursor: pointer;
   transition: color 0.3s ease;

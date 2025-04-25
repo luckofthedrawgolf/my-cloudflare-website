@@ -855,7 +855,7 @@ hr {
     cursor: pointer;
   }
 
-  .nav-links.active ~ .hamburger {
+  .nav-links.active {
     display: none;
   }
 
@@ -880,12 +880,17 @@ hr {
 
 }
 
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .close-btn a {
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
-  margin-bottom: 40px;
   transition: color 0.3s ease;
 }
 

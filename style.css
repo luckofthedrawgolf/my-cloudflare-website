@@ -959,3 +959,9 @@ hr {
   display: block;
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

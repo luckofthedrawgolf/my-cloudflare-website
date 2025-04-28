@@ -57,99 +57,6 @@
   </div>
 </section>
 
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    z-index: 1001;
-    height: 40px;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links li a:hover {
-    color: #555;
-  }
-}
-
-
-/* --- NAVIGATION BAR --- */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 20px 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  font-family: sans-serif;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: black;
-}
-
-@media (min-width: 769px) {
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.2s ease;
-  }
-
-  .nav-links li a:hover {
-    color: gray;
-  }
-}
 
 /*144-147 makes the top of the homepage a light gray  */
 body {
@@ -746,63 +653,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-/* Make the navbar layout flex by default */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-}
 
-
-.hamburger.active {
-  color: white !important;
-}
-
-/* Show the nav links normally on desktop */
-@media (min-width: 769px) {
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
 .nav-links li a {
-  text-decoration: none;
-  color: black; /* or black if your navbar is light */
-  font-size: 1.2em;
-}
-
-  .nav-links li {
-    margin: 15px 0;
-  }
-}
-/* FIX: Make sure nav links show on desktop screens */
-@media (min-width: 769px) {
-  .nav-links {
-    display: flex !important;
-    flex-direction: row;
-    background-color: transparent;
-  }
-}
-
-/* Mobile behavior */
-@media (max-width: 768px) {
-  /* Keep this part for the hamburger icon itself */
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  .nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
@@ -974,12 +826,6 @@ hr {
   cursor: pointer;
 }
 
-/* === Desktop View === */
-@media (min-width: 769px) {
-  .navbar {
-    display: none; /* Only show this style on mobile */
-  }
-}
 
 /* === Mobile Drawer Link Styling (Optional for polish) === */
 .nav-links li a {

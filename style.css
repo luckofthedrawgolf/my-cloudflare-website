@@ -983,4 +983,9 @@ hr {
   }
 }
 
+@media (min-width: 769px) {
+  .nav-links {
+    display: none;
+  }
+}
 

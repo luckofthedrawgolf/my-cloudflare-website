@@ -891,9 +891,9 @@ hr {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%; /* This keeps it centered vertically */
   transition: color 0.3s ease;
+  margin-left: 16px;
 }
 
 

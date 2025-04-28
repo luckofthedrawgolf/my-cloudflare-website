@@ -963,4 +963,9 @@ hr {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .desktop-nav-links {
+    display: none;
+  }
+}
 

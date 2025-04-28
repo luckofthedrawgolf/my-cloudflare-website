@@ -882,17 +882,20 @@ hr {
     color: #aaa;
   }
 
-  /* Hamburger styling and hide when active */
-  .hamburger {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.8rem;
-  color: #777;                /* Keep it grey */
-  z-index: 1002;               /* ← Make sure it sits ABOVE the slogan banner */
+  /* Hamburger styling */
+.hamburger {
+  position: relative; /* Changed from absolute to relative so it aligns properly inside nav */
+  font-size: 32px;
+  color: black; /* Now black instead of gray */
+  z-index: 1002; /* Keep this to stay above slogan banner */
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* This keeps it centered vertically */
   transition: color 0.3s ease;
 }
+
 
 .hamburger:hover {
   color: #aaa;

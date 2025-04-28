@@ -930,3 +930,54 @@ hr {
   }
 }
 
+/* === Navbar Mobile Style === */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* === Desktop View === */
+@media (min-width: 769px) {
+  .navbar {
+    display: none; /* Only show this style on mobile */
+  }
+}
+
+/* === Mobile Drawer Link Styling (Optional for polish) === */
+.nav-links li a {
+  transition: letter-spacing 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-links li a:hover {
+  letter-spacing: 1px;
+  font-weight: bold;
+}

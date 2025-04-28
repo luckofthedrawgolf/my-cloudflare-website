@@ -964,8 +964,10 @@ hr {
 }
 
 @media (max-width: 768px) {
-  .desktop-nav-links {
+  .desktop-nav-links,
+  .desktop-navbar {
     display: none;
   }
 }
+
 

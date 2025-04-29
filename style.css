@@ -756,7 +756,7 @@ hr {
   }
 
   .navbar img {
-    max-height: 28px;
+    max-height: 32px;
     height: auto;
     display: block;         /* Fixes invisible baseline spacing */
     align-self: center;     /* Aligns logo vertically in navbar */

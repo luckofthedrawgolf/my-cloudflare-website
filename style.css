@@ -765,6 +765,19 @@ hr {
   align-items: center;
   padding: 6px 16px;
 }
+
+@media (min-width: 769px) {
+  .navbar-container {
+    padding: 4px 12px;
+  }
+
+  .navbar img {
+    max-height: 36px;
+    height: auto;
+  }
+}
+
+
 .desktop-nav-links {
   display: flex;
   justify-content: center;
@@ -789,13 +802,6 @@ hr {
   top: 0;
   z-index: 1000;
   transition: top 0.3s;
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
 }
 
 .nav-icons {

@@ -774,9 +774,10 @@ hr {
   .navbar img {
     max-height: 28px;
     height: auto;
+    display: block;         /* Fixes invisible baseline spacing */
+    align-self: center;     /* Aligns logo vertically in navbar */
   }
 }
-
 
 .desktop-nav-links {
   display: flex;

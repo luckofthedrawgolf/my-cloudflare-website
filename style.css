@@ -915,7 +915,7 @@ hr {
 /* === Logo Sizing for Desktop === */
 @media (min-width: 769px) {
   .navbar img {
-    max-height: 36px;
+    max-height: 48px;
     height: auto;
     display: block;
     align-self: center;

@@ -899,7 +899,7 @@ hr {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  /* This hides the desktop navbar on mobile */
   .desktop-nav-links,
   .desktop-navbar {
     display: none;
@@ -908,6 +908,12 @@ hr {
 
 @media (min-width: 769px) {
   .nav-links {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) { /* This hides the mobile navbar on desktop */
+  .mobile-navbar {
     display: none;
   }
 }

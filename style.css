@@ -912,22 +912,37 @@ hr {
     display: none;
   }
 }
-/* === Logo Sizing for Desktop === */
+
+/* === LOGO SIZING AND POSITIONING === */
+
+/* Desktop - Centered on left side */
 @media (min-width: 769px) {
-  .navbar img {
+  .logo-img {
     max-height: 48px;
     height: auto;
     display: block;
+    margin: 0;
     align-self: center;
-    margin-top: auto;
-    margin-bottom: auto;
+  }
 
+  .desktop-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This centers the logo inside its div */
+    height: 100%;
   }
 }
 
-/* === Logo Sizing for Mobile === */
+/* Mobile - Standard appearance */
 @media (max-width: 768px) {
-  .navbar img {
+  .logo-img {
     max-height: 40px;
     height: auto;
     display: block;

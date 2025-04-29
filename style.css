@@ -920,7 +920,7 @@ hr {
   .logo-img {
     max-height: 48px;
     height: auto;
-    display: block;
+    display: flex;
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;

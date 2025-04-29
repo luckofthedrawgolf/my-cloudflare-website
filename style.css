@@ -629,14 +629,6 @@ hr {
 
 }
 
-.hat-img {
-    max-height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
-}
-
 .hat-wrapper {
     display: flex;
     justify-content: center;
@@ -653,12 +645,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-  }
 }
 
 /* === MOBILE DRAWER MENU (Remastered for Clean Pro Feel) === */
@@ -701,21 +687,8 @@ hr {
     transform: translateX(0);
   }
 
-  /* Nav links style */
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease, font-weight 0.3s ease;
-  }
-
-  .nav-links li a:hover {
-    color: #aaa;
-    font-weight: bold;
-  }
-
-  /* Close button styling */
+  
+/* Close button styling */
   .close-btn {
     position: absolute;
     top: 20px;
@@ -786,16 +759,6 @@ hr {
 }
 
 /* === Navbar Mobile Style === */
-.navbar {
-  background-color: white !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  transition: top 0.3s;
-}
-
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -816,39 +779,6 @@ hr {
   font-size: 18px;
 }
 
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.nav-icons .icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
-
-.nav-icons .icon:hover {
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-
-.hamburger {
-  font-size: 28px;
-  cursor: pointer;
-}
-
-
-/* === Mobile Drawer Link Styling (Optional for polish) === */
-.nav-links li a {
-  transition: letter-spacing 0.3s ease, font-weight 0.3s ease;
-}
-
-.nav-links li a:hover {
-  letter-spacing: 1px;
-  font-weight: bold;
-}
 
 /* === Navbar Base === */
 .navbar {
@@ -949,13 +879,15 @@ hr {
   text-decoration: none;
   font-size: 1.5rem;
   letter-spacing: 0.5px;
-  transition: color 0.3s ease, font-weight 0.3s ease;
+  transition: color 0.3s ease, font-weight 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #aaa;
   font-weight: bold;
+  letter-spacing: 1px;
 }
+
 
 /* === Overlay Dim Background === */
 .overlay {

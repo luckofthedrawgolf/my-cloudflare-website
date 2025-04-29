@@ -39,21 +39,47 @@
   “We Don’t Fix Your Swing. We Fix Your Swagger.”™
 </div>
 
-<nav class="navbar">
-  <div class="logo" style="display: flex; align-items: center;">
-    <img src="images/swooshlotd2.jpg" alt="Logo" style="height: 60px; margin-right: 14px;">
+  <!-- === Mobile Navbar === -->
+<nav class="navbar mobile-navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <img src="images/swooshlotd2.jpg" alt="Logo" style="height: 40px;">
+    </div>
+    <div class="nav-icons">
+      <a href="#"><img src="images/search-icon.svg" alt="Search" class="icon"></a>
+      <a href="cart.html"><img src="images/cart-icon.svg" alt="Cart" class="icon"></a>
+      <div class="hamburger">&#9776;</div> <!-- Hamburger Icon -->
+    </div>
   </div>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="cart.html">Cart</a></li>
-  </ul>
-  <div class="nav-page-label">Shop Luck of the Draw</div>
-
+  <li class="close-btn"><a href="#">X Close</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="cart.html">Cart</a></li>
+</ul>
+  
 </nav>
 
+
+<div class="overlay"></div>
+
+  <!-- === Desktop Navbar === -->
+<nav class="navbar desktop-navbar">
+  <div class="desktop-navbar-container">
+    <div class="logo">
+      <img src="images/swooshlotd2.jpg" alt="Logo" style="height: 40px;">
+    </div>
+    <div class="desktop-nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+</nav>
  
 
 

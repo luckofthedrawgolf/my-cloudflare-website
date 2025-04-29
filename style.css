@@ -755,12 +755,7 @@ hr {
     padding: 4px 12px;
   }
 
-  .navbar img {
-    max-height: 32px;
-    height: auto;
-    display: block;         /* Fixes invisible baseline spacing */
-    align-self: center;     /* Aligns logo vertically in navbar */
-  }
+ 
 }
 
 .desktop-nav-links {
@@ -915,6 +910,25 @@ hr {
 @media (min-width: 769px) { /* This hides the mobile navbar on desktop */
   .mobile-navbar {
     display: none;
+  }
+}
+/* === Logo Sizing for Desktop === */
+@media (min-width: 769px) {
+  .navbar img {
+    max-height: 36px;
+    height: auto;
+    display: block;
+    align-self: center;
+  }
+}
+
+/* === Logo Sizing for Mobile === */
+@media (max-width: 768px) {
+  .navbar img {
+    max-height: 40px;
+    height: auto;
+    display: block;
+    align-self: center;
   }
 }
 

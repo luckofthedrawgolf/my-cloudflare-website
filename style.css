@@ -857,6 +857,7 @@ hr {
 .nav-links.active {
   transform: translateX(0);
   opacity: 1;
+  z-index: 1000;
 }
 
 /* Drawer Links */
@@ -887,11 +888,13 @@ hr {
   display: none;
   opacity: 0;
   transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
 .overlay.show {
   display: block;
   opacity: 1;
+  pointer-events: auto;
 }
 
 @media (max-width: 768px) {  /* This hides the desktop navbar on mobile */

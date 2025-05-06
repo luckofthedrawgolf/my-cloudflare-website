@@ -681,14 +681,7 @@ hr {
    
   }
 
-  /* Fade-in + slide animation for each nav link */
-  .nav-links li {
-    opacity: 0;
-    transform: translateX(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-
-  .nav-links.active li {
+   .nav-links.active li {
     opacity: 1;
     transform: translateX(0);
    

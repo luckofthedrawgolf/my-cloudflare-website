@@ -853,6 +853,7 @@ hr {
     padding-top: 0;
     gap: 25px;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
   }
 }
 
@@ -862,6 +863,7 @@ hr {
   transform: translateX(0);
   opacity: 1;
   z-index: 1000;
+  pointer-events: auto;
 }
 
 /* Drawer Links */

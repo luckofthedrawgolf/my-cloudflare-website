@@ -671,11 +671,13 @@ hr {
     padding-top: 0;
     gap: 25px; /* tightened gap for modern look */
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* soft edge shadow */
+    pointer-events: none;
   }
 
   .nav-links.active {
     transform: translateX(0);
     opacity: 1;
+   
   }
 
   /* Fade-in + slide animation for each nav link */
@@ -688,6 +690,7 @@ hr {
   .nav-links.active li {
     opacity: 1;
     transform: translateX(0);
+    pointer-events: auto;
   }
 
   

@@ -1,38 +1,58 @@
-/* === MODERN HERO STYLE === */
+/*
+====================================
+ GLOBAL STYLES
+====================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+
+/*
+====================================
+ HERO SECTION
+====================================
+*/
 .hero {
- 
+  background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px; /* You can tweak this height */
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
   text-align: center;
+  color: black;
 }
 
-
-.hero {
-  background-color: white;
-  ...
+.hero-logo {
+  max-width: 400px;
+  height: auto;
+  margin: 40px auto 30px;
+  display: block;
 }
 
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
+.hero-text {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
 }
 
 .hero .btn {
@@ -49,23 +69,11 @@
   background-color: #ddd;
 }
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Luck of the Draw Golf</h1>
-    <p>Premium Apparel & Gear for the Bold Golfer</p>
-    <a href="shop.html" class="btn">Shop Now</a>
-  </div>
-</section>
-
-
-/*144-147 makes the top of the homepage a light gray  */
-body {
-  background-color: ##ffffff; /* white */
-  margin: 0;
-  font-family: sans-serif;
-}
-
-/* Slogan banner like Nike */
+/*
+====================================
+ TOP BANNER
+====================================
+*/
 .top-banner {
   background-color: black;
   color: white;
@@ -74,871 +82,15 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 1px;
-  position: relative;
   z-index: 1001;
 }
 
-/* this is the color of the letters for thebold and shop now */
-.hero-content p {
-  color: black !important;
-}
 
-.hero p {
-  color: black !important;
-}
-
-p {
-  color: black !important;
-}
-
-.hero-logo {
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 30px;
- margin-top: 40px;
-}
-
-.hero-text {
-  margin-top: 20px;
-  text-align: center;
-  color: black;
-}
-
-/* === PRODUCT WRAPPER BACKGROUND === */
-.product-wrapper {
-    background: linear-gradient(to bottom, #000000, #2a2a2a); /* smooth gradient background */
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    position: relative;
-}
-
-}
-
-.product-wrapper > * {
-    position: relative;
-    z-index: 2;
-}
-
-.product-section-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-
-
-/* === INDIVIDUAL PRODUCT SECTIONS === */
-.product-section {
-  margin-bottom: 40px;
-}
-
-/* === PRODUCT CARDS === */
-.product {
-    background-color: #fff;
-    color: #000;
-    border-radius: 12px;               /* smoother corners */
-    padding: 30px;                    /* more space inside the box */
-    max-width: 280px;
-    margin: 20px auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-}
-
-
-.product:hover {
-  transform: translateY(-5px);
-}
-
-/* === BUTTONS === */
-.snipcart-add-item {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-weight: bold;
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.snipcart-add-item:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.product-btn {
-  display: inline-block;
-  margin-top: auto; /* this helps it stay at the bottom */
-  padding: 12px 24px;
-  font-weight: bold;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  align-self: stretch; /* <<< ADD THIS LINE */
-}
-
-
-.product-btn:hover {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-
-}
-
-/* === CONTACT SECTION === */
-.contact-center {
-  text-align: center;
-  color: black; /* or whatever your text color is */
-  padding: 40px 20px;
-}
-
-.contact-center a {
-  color: black; /* make the link visible on white background */
-  text-decoration: underline;
-}
-
-/* HAT PAGE ONLY */
-.hats-page .product-section {
-  text-align: center;
-}
-
-.hats-page .product {
-  display: inline-block;
-  max-width: 220px;
-  margin: 20px;
-  vertical-align: top;
-  text-align: center;
-}
-
-.hats-page .product img {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.shop-nav-text {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.nav-page-label {
-  font-size: 18px;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 50%;
-  color: black;
-  pointer-events: none;
-}
-
-.about-section {
-  text-align: center;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.product-card {
-    background-color: #fff;
-    color: black;
-    border-radius: 10px;
-    padding: 20px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  /* This forces the button to the bottom */
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft floating shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
-    min-height: 350px;            /* Keeps the cards equal height */
-    overflow: hidden;             /* Prevents the button from breaking out */
-
-}
-.product-card:hover {
-    transform: translateY(-5px); /* Lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-}
-
-
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-.product-card img {
-    max-height: 180px;
-    
-    object-fit: contain;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* BUT override specifically for the hat image */
-.hat-img {
-    width: auto !important;    /* Override the 100% width */
-    max-height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
-}
-
-
-}
-
-.product-link {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-}
-
-.product-link:hover {
-  opacity: 0.95;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .product-wrapper,
-  .product-section-wrapper,
-  .product-section,
-  .products {
-    flex-direction: column !important;
-    align-items: center;
-  }
-
-  .product-card {
-    width: 90%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .shirt-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .shirt-images img {
-    width: 80%;
-    max-width: 250px;
-  }
-
-  .product-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .main-image img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .product-details {
-    text-align: center;
-    width: 100%;
-  }
-
-  .sizes {
-    justify-content: center;
-  }
-}
-
-.info-links {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.info-links a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.info-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #555;
-}
-
-.about-page {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-.about-page h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.about-page p {
-  font-size: 18px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.about-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  margin: 40px auto;
-  max-width: 800px;
-}
-
-.about-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.about-video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 800px;
-  margin: 40px auto;
-}
-
-.about-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.about-container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.about-container h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.about-container p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.about-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  margin-top: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.about-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.about-container {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.about-container h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.about-container p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.about-video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin-top: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.about-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 600px) {
-  .about-container {
-    padding: 20px 15px;
-    font-size: 16px;
-  }
-
-  .about-container h1 {
-    font-size: 24px;
-  }
-
-  .about-container p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-  }
-
-  .about-video {
-    margin-top: 30px;
-    padding-bottom: 56.25%; /* Keeps the 16:9 ratio */
-  }
-
-  .about-video iframe {
-    border-radius: 8px;
-  }
-}
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Font Upgrade */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #fafafa;
-  color: #222;
-  line-height: 1.7;
-  padding: 24px 16px;
-  font-size: 16px;
-}
-
-/* Page Container */
-.about-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Heading */
-.about-container h1 {
-  font-size: 28px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 24px;
-  color: #111;
-}
-
-/* Paragraphs */
-.about-container p {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-/* Divider (Optional) */
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 30px 0;
-}
-
-/* YouTube Video Styling */
-.about-video {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.about-video iframe {
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border: none;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 480px) {
-  .about-container h1 {
-    font-size: 22px;
-  }
-
-  body {
-    font-size: 15px;
-    padding: 20px 12px;
-  }
-}
-
-.product-card h4 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    text-align: center;
-    white-space: nowrap; /* <<< This forces it to stay on one line */
-}
-.product-card p {
-    font-size: 1rem;                /* Clean, readable size */
-    margin-bottom: 20px;            /* Adds breathing room above the "shop" button */
-    margin-top: 10px;                /* Keeps it from smashing against the title */
-    color: #000;                    /* Keeps it sharp and matches your clean look */
-}
-
-/* This keeps the hat image centered without affecting the others */
-
-}
-
-.hat-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-.hat-img {
-    max-height: 150px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-
-/* === MOBILE DRAWER MENU (Remastered for Clean Pro Feel) === */
-@media (max-width: 768px) {
-  /* Drawer styles */
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.95);
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    gap: 25px; /* tightened gap for modern look */
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* soft edge shadow */
-    pointer-events: none;
-  }
-
-  .nav-links.active {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-   
-  }
-
-   .nav-links.active li {
-    opacity: 1;
-    transform: translateX(0);
-   
-  }
-
-  
-/* Close button styling */
-  .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-
-  .close-btn a {
-    color: white;
-    font-size: 1.1rem;
-    font-weight: normal;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .close-btn a:hover {
-    color: #aaa;
-  }
-
-  /* Hamburger styling */
-.hamburger {
-  position: relative; /* Changed from absolute to relative so it aligns properly inside nav */
-  font-size: 32px;
-  color: black; /* Now black instead of gray */
-  z-index: 1002; /* Keep this to stay above slogan banner */
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  height: 100%; /* This keeps it centered vertically */
-  transition: color 0.3s ease;
-  margin-left: 16px;
-}
-
-
-.hamburger:hover {
-  color: #aaa;
-}
-
-
-  .hamburger.active {
-    display: none;
-  }
- }
-
-@media (min-width: 769px) {
-  .hamburger,
-  .close-btn {
-    display: none;
-  }
-}
-
-/* === Navbar Mobile Style === */
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 16px;
-}
-
-@media (min-width: 769px) {
-  .navbar-container {
-    padding: 4px 12px;
-  }
-
- 
-}
-
-.desktop-nav-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.desktop-nav-links a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-
-/* === Navbar Base === */
-.navbar {
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-  transition: top 0.3s;
-}
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.nav-icons .icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
-
-.nav-icons .icon:hover {
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-/* === Hamburger Icon Mobile Only === */
-.hamburger {
-  font-size: 28px;
-  color: black;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-left: 16px;
-  z-index: 1002;
-  transition: color 0.3s ease;
-}
-
-.hamburger:hover {
-  color: #aaa;
-}
-
-.hamburger.active {
-  display: none;
-}
-
-/* === Desktop Hide Hamburger === */
-@media (min-width: 769px) {
-  .hamburger,
-  .close-btn {
-    display: none;
-  }
-}
-
-/* === Mobile Drawer Menu === */
-@media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.95);
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
-    gap: 25px;
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-  }
-}
-
-
-/* Drawer menu active */
-.nav-links.active {
-  transform: translateX(0);
-  opacity: 1;
-  z-index: 1000;
-  pointer-events: auto;
-}
-
-/* Drawer Links */
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-  transition: color 0.3s ease, font-weight 0.3s ease, letter-spacing 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #aaa;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-
-/* === Overlay Dim Background === */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 998;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-.overlay.show {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-@media (max-width: 768px) {  /* This hides the desktop navbar on mobile */
-  .desktop-nav-links,
-  .desktop-navbar {
-    display: none;
-  }
-}
-
-@media (min-width: 769px) {
-  .nav-links {
-    display: none;
-  }
-}
-
-@media (min-width: 769px) { /* This hides the mobile navbar on desktop */
-  .mobile-navbar {
-    display: none;
-  }
-}
-
-/* === LOGO SIZING AND POSITIONING === */
-
-/* === Logo Sizing for Desktop === */
-@media (min-width: 769px) {
-  .logo-img {
-    max-height: 48px;
-    height: auto;
-    display: flex;
-    align-self: center;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
-
-/* === Logo Sizing for Mobile === */
-@media (max-width: 768px) {
-  .logo-img {
-    max-height: 40px;
-    height: auto;
-    display: block;
-    align-self: center;
-  }
-}
-
+/*
+====================================
+ CARD GAME LAUNCH BANNER
+====================================
+*/
 .card-launch-banner {
   background-color: #111;
   color: white;
@@ -995,3 +147,309 @@ hr {
   background-color: #ddd;
 }
 
+
+/*
+====================================
+ NAVIGATION (MOBILE + DESKTOP)
+====================================
+*/
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.navbar-container, .desktop-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 16px;
+}
+
+.logo-img {
+  max-height: 48px;
+  height: auto;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-icons .icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.nav-icons .icon:hover {
+  opacity: 0.7;
+}
+
+.desktop-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.desktop-nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* MOBILE NAVIGATION DRAWER */
+.nav-links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.95);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  gap: 25px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.nav-links.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #aaa;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hamburger {
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  z-index: 1002;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  margin-left: 16px;
+}
+
+.hamburger:hover {
+  color: #aaa;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.close-btn a {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.close-btn a:hover {
+  color: #aaa;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.overlay.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav-links,
+  .desktop-navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger,
+  .close-btn,
+  .nav-links {
+    display: none;
+  }
+}
+
+/*
+====================================
+ PRODUCT SECTIONS
+====================================
+*/
+.product-wrapper {
+  background: linear-gradient(to bottom, #000000, #2a2a2a);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.product-section-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.product-section {
+  margin-bottom: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+  color: #000;
+}
+
+.hat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.hat-img {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-btn {
+  padding: 12px 24px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+/*
+====================================
+ FOOTER + LINKS
+====================================
+*/
+.info-links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.info-links a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.info-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}

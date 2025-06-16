@@ -12,13 +12,6 @@ window.onload = function () {
     overlay.classList.add('show');
   });
 
-  // Close drawer by clicking overlay
-  overlay.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    hamburger.classList.remove('active');
-    overlay.classList.remove('show');
-  });
-
   // Close drawer by clicking the "X Close" link
   closeBtn.addEventListener('click', (e) => {
     e.preventDefault(); // Only this one needs preventDefault

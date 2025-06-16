@@ -26,3 +26,11 @@ window.onload = function() {
         overlay.classList.remove('show');
     });
 };
+    // Close drawer when clicking any link inside the nav
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+            overlay.classList.remove('show');
+        });
+    });

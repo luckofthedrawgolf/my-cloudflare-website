@@ -1,36 +1,41 @@
-window.onload = function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    const overlay = document.querySelector('.overlay');
-    const closeBtn = document.querySelector('.close-btn a'); // Select the X close button
+window.onload = function () {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const overlay = document.querySelector('.overlay');
+  const closeBtn = document.querySelector('.close-btn a');
+  const navItems = document.querySelectorAll('.nav-links a');
 
-    // Open drawer
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
-        overlay.classList.toggle('show'); // Show overlay when drawer is open
-    });
+  // Open drawer
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    hamburger.classList.add('active');
+    overlay.classList.add('show');
+  });
 
-    // Close drawer when clicking the overlay
-    overlay.addEventListener('click', () => {
+  // Close drawer by clicking overlay
+  overlay.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+    overlay.classList.remove('show');
+  });
+
+  // Close drawer by clicking the "X Close" link
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Only this one needs preventDefault
+    navLinks.classList.remove('active');
+    hamburger.classList.remove('active');
+    overlay.classList.remove('show');
+  });
+
+  // Close drawer and follow link when any nav link is clicked
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(() => {
         navLinks.classList.remove('active');
         hamburger.classList.remove('active');
         overlay.classList.remove('show');
+      }, 100); // Small delay allows link navigation to register first
     });
-
-    // Close drawer when clicking the X button
-    closeBtn.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent link default behavior
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-        overlay.classList.remove('show');
-    });
+  });
 };
-    // Close drawer when clicking any link inside the nav
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
-            overlay.classList.remove('show');
-        });
-    });
+

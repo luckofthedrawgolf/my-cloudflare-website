@@ -447,3 +447,34 @@ hr {
   font-size: 14px;
   color: #555;
 }
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1.6;
+  color: #111;
+}
+
+.top-banner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about-video {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}

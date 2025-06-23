@@ -431,7 +431,7 @@ card-launch-banner input[type="email"] {
 /* === MOBILE DRAWER === */
 .hamburger {
   font-size: 28px;
-  color: #ffd700; /* Yellow to match your nav links */
+  color: black
   cursor: pointer;
   z-index: 1002;
   transition: color 0.3s ease;

@@ -261,16 +261,21 @@ hr {
   right: 20px;
 }
 
-.close-btn a {
+.close-btn {
   color: white;
   font-size: 1.1rem;
+  cursor: pointer;
   text-decoration: none;
   transition: color 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.close-btn a:hover {
+.close-btn:hover {
   color: #aaa;
 }
+
 
 .overlay {
   position: fixed;

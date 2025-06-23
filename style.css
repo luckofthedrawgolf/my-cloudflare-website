@@ -190,7 +190,8 @@ card-launch-banner input[type="email"] {
 }
 
 .nav-icons .icon:hover {
-  opacity: 0.7;
+  color: #ffea8a; /* soft yellow hover */
+  transition: color 0.2s ease-in-out;
 }
 
 .desktop-nav-links {
@@ -201,7 +202,7 @@ card-launch-banner input[type="email"] {
 }
 
 .desktop-nav-links a {
-  color: black;
+  color: #ffd700;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
@@ -230,7 +231,7 @@ card-launch-banner input[type="email"] {
 ====================================
 */
 .product-wrapper {
-  background: linear-gradient(to bottom, #000000, #2a2a2a);
+  background: linear-gradient(to bottom, #0e0e0e, #1a1a1a);
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -258,7 +259,7 @@ card-launch-banner input[type="email"] {
 .product-card {
   background-color: #fff;
   color: black;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 20px;
   width: 220px;
   display: flex;
@@ -268,7 +269,7 @@ card-launch-banner input[type="email"] {
   text-align: center;
   margin: 0 auto;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.15); /* yellow glow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 350px;
   overflow: hidden;
@@ -300,7 +301,7 @@ card-launch-banner input[type="email"] {
 .product-card p {
   font-size: 1rem;
   margin: 10px 0 20px;
-  color: #000;
+  color: #333;
 }
 
 .hat-wrapper {
@@ -323,19 +324,21 @@ card-launch-banner input[type="email"] {
 .product-btn {
   padding: 12px 24px;
   font-weight: bold;
-  background-color: #000;
-  color: #fff;
+  background-color: #ffd700;       /* LOTD yellow */
+  color: #000;                      /* Black text for contrast */
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 2px solid #ffd700;       /* Matches the background */
   border-radius: 6px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 .product-btn:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #ffd700;
   border-color: #000;
 }
+
 
 /*
 ====================================
@@ -348,13 +351,14 @@ card-launch-banner input[type="email"] {
 }
 
 .info-links a {
-  color: black;
+  color: #ffd700; /* LOTD Yellow */
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
 }
 
 .info-links a:hover {
+  color: white;
   text-decoration: underline;
 }
 
@@ -362,7 +366,7 @@ card-launch-banner input[type="email"] {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
-  color: #555;
+  color: #ccc; /* Lighter gray for contrast on black */
 }
 
 .about-container {
@@ -375,13 +379,16 @@ card-launch-banner input[type="email"] {
 }
 
 .top-banner {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #111; /* dark gray-black for softer contrast than pure black */
   text-align: center;
   padding: 15px 10px;
   font-size: 1.3rem;
   font-weight: bold;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #ddd; /* optional: adds separation from hero */
 }
+
 
 .about-video {
   margin-top: 30px;
@@ -420,19 +427,20 @@ card-launch-banner input[type="email"] {
 /* === MOBILE DRAWER === */
 .hamburger {
   font-size: 28px;
-  color: black;
+  color: #ffd700; /* Yellow to match your nav links */
   cursor: pointer;
   z-index: 1002;
+  transition: color 0.3s ease;
 }
 
 .mobile-drawer {
   position: fixed;
   top: 0;
-  right: -250px; /* Hidden by default */
+  right: -250px;
   width: 250px;
   height: 100%;
-  background-color: #111;
-  color: white;
+  background-color: #000; /* true black for clean contrast */
+  color: #ffd700;          /* same yellow as desktop nav links */
   transition: right 0.3s ease;
   z-index: 1001;
   display: flex;

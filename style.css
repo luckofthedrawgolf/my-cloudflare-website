@@ -10,9 +10,9 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #1a1f1c;
   font-family: 'Inter', sans-serif;
-  color: #222;
+  color: #f4f4f4;
   line-height: 1.7;
   font-size: 16px;
 }
@@ -46,31 +46,35 @@ hr {
 .hero-text {
   margin-top: 20px;
   text-align: center;
-  color: black;
+  color: #f4f4f4;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero .btn {
-  background-color: #fff;
-  color: #000;
+  background-color: #f4f4f4;
+  color: #1a1f1c;
   padding: 14px 30px;
   font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  border: 2px solid #1a1f1c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .hero .btn:hover {
-  background-color: #ddd;
+  background-color: #1a1f1c;
+  color: #f4f4f4;
 }
+
 
 /*
 ====================================
  TOP BANNER
 ====================================
-*/
 .top-banner {
-  background-color: black;
-  color: white;
+  background-color: #1a1f1c;
+  color: #f4f4f4;
   text-align: center;
   padding: 12px 0;
   font-size: 0.95rem;
@@ -80,19 +84,19 @@ hr {
 }
 
 
+
 /*
 ====================================
  CARD GAME LAUNCH BANNER
 ====================================
 */
 .card-launch-banner {
-  background-color: #111;
-  color: white;
+  background-color: #222;
+  color: #f4f4f4;
   text-align: center;
   padding: 60px 20px;
   margin-top: 40px;
 }
-
 .card-launch-banner .launch-content {
   max-width: 800px;
   margin: 0 auto;
@@ -102,11 +106,13 @@ hr {
   font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #f4f4f4; /* Updated */
 }
 
 .card-launch-banner p {
   font-size: 1.1rem;
   margin-bottom: 30px;
+  color: #f4f4f4; /* Updated */
 }
 
 .card-launch-banner form {
@@ -116,29 +122,32 @@ hr {
   flex-wrap: wrap;
 }
 
-.card-launch-banner input[type="email"] {
+card-launch-banner input[type="email"] {
   padding: 12px;
   flex: 1;
   min-width: 250px;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
+  background-color: #2a2a2a;
+  color: #f4f4f4;
+  outline: none;
 }
 
 .card-launch-banner button {
   padding: 12px 24px;
-  background-color: white;
-  color: black;
+  background-color: #f4f4f4;
+  color: #1a1f1c;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
   font-size: 1rem;
-  transition: all 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
 }
 
 .card-launch-banner button:hover {
-  background-color: #ddd;
+  background-color: #e0e0e0;
 }
 
 
@@ -148,7 +157,7 @@ hr {
 ====================================
 */
 .navbar {
-  background-color: white;
+  background-color: #1a1f1c;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: relative;

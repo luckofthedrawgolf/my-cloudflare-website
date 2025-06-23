@@ -240,6 +240,8 @@ card-launch-banner input[type="email"] {
   padding: 60px 20px;
   text-align: center;
   position: relative;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
 }
 
 .product-section-wrapper {

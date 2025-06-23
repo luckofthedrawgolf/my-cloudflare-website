@@ -157,7 +157,7 @@ card-launch-banner input[type="email"] {
 ====================================
 */
 .navbar {
-  background-color: #1a1f1c;
+  background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: relative;
@@ -202,12 +202,16 @@ card-launch-banner input[type="email"] {
 }
 
 .desktop-nav-links a {
-  color: #ffd700;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+  transition: color 0.2s ease;
 }
 
+.desktop-nav-links a:hover {
+  color: #ffd700;
+}
 
 
 @media (max-width: 768px) {

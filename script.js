@@ -2,7 +2,7 @@ window.onload = function () {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
   const overlay = document.querySelector('.overlay');
-  const closeBtn = document.querySelector('.close-btn a');
+  const closeBtn = document.querySelector('.close-btn');
   const navItems = document.querySelectorAll('.nav-links a');
 
   // Open drawer
